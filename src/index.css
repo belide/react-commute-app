@@ -2,17 +2,100 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #EDEDED;
+  letter-spacing: 1px; 
 }
 
+
+body > *{
+  box-sizing: border-box;
+}
+
+
+div.app{
+	padding-top: 20px;
+}
+
+h1{
+	width: min-content;
+	margin: 20px auto; 
+	padding: 10px;
+	text-align: center; 
+	color: #4885ed;
+	border: 2px solid;
+}
+
+
 form{
-	width: 400px;
+	max-width: 500px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 }
 
+
+label{
+	font-size: 30px;
+	color: #989898;
+	margin-top: 30px;
+}
+
+
+input{
+	color: #7E7E7E;
+	background-color: #EDEDED; 
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #7E7E7E;
+	color: #767676;
+	margin: 0px;
+	padding: 10px 0px;
+	font-size: 30px;
+}
+
+input:focus{
+	border-bottom: 2px solid #4885ed ;
+	color: #4885ed;
+}
+
+
+button{
+	border: none;
+	border-radius: 2px; 
+	margin-top: 40px; 
+	width: 60%;
+	background-color: #4885ed;
+	color: #FAFAFA;
+	padding: 10px;
+	font-size: 30px;
+	outline: none;
+}
+
+
 div.placeholder{
-	width: 400px; 
-	margin: 50px auto;
-	text-align: center;
+	display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+	form{
+		width: 90%; 
+	}
+
+	label{
+		font-size: 20px;
+	}
+
+	input{	
+		font-size: 20px;
+	}
+
+	button{
+		/*border: 2px solid;*/
+		font-size: 20px; 
+	}
+
+	div.placeholder{
+		width: 90%; 
+	}
 }
