@@ -14,13 +14,13 @@ export function timeStampToDate(timeStamp){
   
 	const dayName = weekDayMap[time.getDay()];  
   
-  const session = () => {
-    if(time.getHours() > 12){
-      return "evening"; 
-    } else{
-      return "morning";
-    }
-  }
+  // const session = () => {
+  //   if(time.getHours() > 12){
+  //     return "evening"; 
+  //   } else{
+  //     return "morning";
+  //   }
+  // }
   
 	return `${dayName}`
 }
