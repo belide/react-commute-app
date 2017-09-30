@@ -20,6 +20,8 @@ class TemperatureInput extends Component{
 	    // this.renderCommute = this.renderCommute.bind(this); 
   	}
 
+  	
+
 
   	onInputFocus(event){
   		const target = event.target; 
