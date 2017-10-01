@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TemperatureInput from "./temperature.js"; 
+import Commute from "./commute.js"; 
 import { fetchWeather } from "../utils/http.js"; 
 // import { timeStampToDate } from  "../utils/helper.js"; 
 
@@ -64,7 +65,7 @@ class App extends Component {
 	renderCommute(){
 		if(this.state.commuteDetails){
 			console.log("state has commuteDetails property"); 
-			return this.state.commuteDetails.map((elm) => <div key={elm.time}>Please take a {elm.commute}</div>)
+			return this.state.commuteDetails.map((elm) => <Commute key={elm.time} time={elm.time} commute={elm.commute}/>)
 		} else {
 			console.log("state does not have commuteDetails property")
 			return null; 

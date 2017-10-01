@@ -9,20 +9,11 @@ export function timeStampToDate(timeStamp){
 	  5: "Friday", 
 	  6: "Saturday"
 	}
-
 	const time = new Date(timeStamp); 
-  
-	const dayName = weekDayMap[time.getDay()];  
-  
-  // const session = () => {
-  //   if(time.getHours() > 12){
-  //     return "evening"; 
-  //   } else{
-  //     return "morning";
-  //   }
-  // }
-  
-	return `${dayName}`
+	const dayName = weekDayMap[time.getDay()]; 
+	const dayTime = time.getHours(); 
+	const amOrPm = (time) => time >= 12 ? "PM" : "AM" ; 
+	return `${dayName}, ${dayTime}${amOrPm(dayTime)}`
 }
 
 

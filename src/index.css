@@ -113,4 +113,9 @@ b{
 	div.error{
 		font-size: 10px; 
 	}
+
+	div.commute{
+		display: flex;
+		justify-content: center; 
+	}
 }
