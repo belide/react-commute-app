@@ -16,7 +16,7 @@ class App extends Component {
 
 	handleFormSubmit(minTemp, maxTemp, maxRain, morningCommuteStartHour, eveningCommuteStartHour){
 	  	//prevent forwarding the form submission to the server
-	  	console.log(minTemp, maxTemp, maxRain, morningCommuteStartHour, eveningCommuteStartHour); 
+	  	console.log(typeof minTemp, typeof maxTemp, typeof maxRain, morningCommuteStartHour, eveningCommuteStartHour); 
 	  	
 	  	if(navigator.geolocation){
 			navigator.geolocation.getCurrentPosition((position) => {

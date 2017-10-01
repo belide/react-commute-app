@@ -16,6 +16,13 @@ div.app{
 	padding-top: 20px;
 }
 
+
+div.error{
+	color: red;
+	margin-top: 5px;
+}
+
+
 h1{
 	width: min-content;
 	margin: 20px auto; 
@@ -35,9 +42,9 @@ form{
 
 
 label{
-	font-size: 30px;
+	font-size: 25px;
 	color: #989898;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 
@@ -49,7 +56,7 @@ input{
 	border-bottom: 1px solid #7E7E7E;
 	color: #767676;
 	margin: 0px;
-	padding: 10px 0px;
+	padding: 5px 0px;
 	font-size: 30px;
 }
 
@@ -71,6 +78,9 @@ button{
 	outline: none;
 }
 
+b{
+	color:  red; 
+}
 
 
 /*div.placeholder{
@@ -98,5 +108,9 @@ button{
 
 	div.placeholder{
 		width: 90%; 
+	}
+
+	div.error{
+		font-size: 10px; 
 	}
 }
